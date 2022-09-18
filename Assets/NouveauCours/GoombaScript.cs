@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class GoombaScript : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            collision.GetComponent<Tuto2022Player>().Death();
+            collision.gameObject.GetComponent<Tuto2022Player>().Death();
         }
     }
 }

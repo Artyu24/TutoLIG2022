@@ -216,8 +216,9 @@ GameObject:
   - component: {fileID: 319374714}
   - component: {fileID: 319374713}
   - component: {fileID: 319374715}
-  - component: {fileID: 319374716}
   - component: {fileID: 319374712}
+  - component: {fileID: 319374716}
+  - component: {fileID: 319374717}
   m_Layer: 0
   m_Name: Mario
   m_TagString: Player
@@ -351,6 +352,18 @@ MonoBehaviour:
   jumpForce: 7.5
   groundCheckRadius: 0.35
   animatorUI: {fileID: 1516571746}
+--- !u!114 &319374717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319374711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e8a56ced40703d4fbfd893ddf0581d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &418608954
 GameObject:
   m_ObjectHideFlags: 0

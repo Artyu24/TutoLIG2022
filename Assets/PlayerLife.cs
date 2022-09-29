@@ -13,18 +13,15 @@ public class PlayerLife : MonoBehaviour
         
     }
 
+    // Update is called once per frame
     void Update()
     {
-        Debug.Log("Player life = " + playerLife); // Displays player life in console
-
         lifeBar.value = playerLife;
     }
-
-    private void OnCollisionEnter2D(Collision2D collision) // Enemy damage
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "enemy")
-        {
-            playerLife -= 10;
+        if(collision.gameObject.tag == "enemy") {
+            playerLife = playerLife - 10;
         }
     }
 }
